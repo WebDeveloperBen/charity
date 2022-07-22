@@ -1,11 +1,11 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="px-4 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-6 lg:px-8 mt-4">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Users</h1>
-        <p class="mt-2 text-sm text-gray-700">
-          A list of all the users in your account including their name, title, email and role.
+        <h1 class="text-xl font-semibold text-gray-900">Current Bags</h1>
+        <p class="mt-2 text-md font-semibold text-gray-700">
+          Current stock count as of: 16th July 2022
         </p>
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
@@ -13,7 +13,7 @@
           type="button"
           class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
         >
-          Add user
+          Offer To Help
         </button>
       </div>
     </div>
@@ -28,13 +28,13 @@
                     scope="col"
                     class="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6"
                   >
-                    Name
+                    Essential Items
                   </th>
                   <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    Title
+                    Need
                   </th>
                   <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    Email
+                    Have
                   </th>
                   <th
                     scope="col"
