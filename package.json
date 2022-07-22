@@ -1,0 +1,8 @@
+{
+  "name": "charity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/WebDeveloperBen/charity.git",
+  "author": "WebDevBen <87594582+WebDeveloperBen@users.noreply.github.com>",
+  "license": "MIT"
+}
