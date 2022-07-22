@@ -25,18 +25,7 @@
         <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
       </svg>
 
-      <div class="relative">
-        <p
-          class="text-center text-lg leading-8 font-normal tracking-tight text-gray-900 sm:text-lg max-w-xl mx-auto"
-        >
-          My name is Ashley McBey and while I'm not affiliated with Share The Dignity. It's a
-          wonderful organisation that I've donated too in previous years with my two young children.
-          All information has come form the Share The Dignity website found here:
-          https://sharethedignity.org.au/itsinthebag
-        </p>
-      </div>
-
-      <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+      <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div class="relative">
           <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
             Transfer funds world-wide

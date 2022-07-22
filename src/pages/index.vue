@@ -1,7 +1,8 @@
 <template>
   <HeadSection />
   <CallToAction />
+  <TheBody />
   <featureSection />
-  <MyTeam />
   <myTable />
+  <MyTeam />
 </template>
