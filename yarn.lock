@@ -19,6 +19,11 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@heroicons/vue@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.6.tgz#d8b90734b436eb5a87f40cc300b64a0fb0031f7f"
+  integrity sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==
+
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
@@ -141,6 +146,20 @@
     "@volar/vue-code-gen" "0.38.9"
     "@vue/compiler-sfc" "^3.2.37"
     "@vue/reactivity" "^3.2.37"
+
+"@vue-hero-icons/outline@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@vue-hero-icons/outline/-/outline-1.7.2.tgz#ec723ee45e142d2249948c58be65f5d35e3c4ed3"
+  integrity sha512-mgMpncarjZHXY1K2tyjbYHf53yQG9amroDR9t2iH/umpsN8+f8RNcTy1m131EZ8WBCm8MpF97XpXPV129rvtVg==
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.3"
+
+"@vue-hero-icons/solid@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@vue-hero-icons/solid/-/solid-1.7.2.tgz#40ce7dca69e216e84af5e3ed7635432b360ac024"
+  integrity sha512-ngjgdYgdjXp8BuHmx998Kl2tAmbatJXdYO8Cut+DXo9OVGZMuVmIzIjnar4H5Wf9wFVdCuag+HazLEu9F7T3cw==
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.3"
 
 "@vue/compiler-core@3.2.37", "@vue/compiler-core@^3.2.37":
   version "3.2.37"
@@ -300,6 +319,11 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
+
+babel-helper-vue-jsx-merge-props@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz#22aebd3b33902328e513293a8e4992b384f9f1b6"
+  integrity sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==
 
 balanced-match@^1.0.0:
   version "1.0.2"

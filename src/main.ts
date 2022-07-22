@@ -3,4 +3,6 @@ import { createRouter } from "../src/router"
 import "./styles.css"
 import App from "./App.vue"
 
-createApp(App).mount("#app")
+const router = createRouter()
+
+createApp(App).use(router).mount("#app")

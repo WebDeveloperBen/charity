@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
-import path from 'path'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from "vite"
+import Vue from "@vitejs/plugin-vue"
+import Pages from "vite-plugin-pages"
+// import generateSitemap from "vite-plugin-pages-sitemap"
+import Components from "unplugin-vue-components/vite"
 
-const SILENT = process.env.SILENT === 'true'
-const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
+const SILENT = process.env.SILENT === "true"
+const SITEMAP_HOST = process.env.SITEMAP_HOST || "http://localhost:3000/"
 
 const plugins = [
   // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
@@ -21,15 +21,15 @@ const plugins = [
   Pages({
     pagesDir: [
       {
-        dir: 'src/pages',
-        baseRoute: '',
+        dir: "src/pages",
+        baseRoute: "",
       },
     ],
-    onRoutesGenerated: (routes) =>
-      generateSitemap({
-        routes,
-        hostname: SITEMAP_HOST,
-      }),
+    // onRoutesGenerated: (routes) =>
+    // generateSitemap({
+    //   routes,
+    //   hostname: SITEMAP_HOST,
+    // }),
   }),
 
   /**
@@ -40,19 +40,19 @@ const plugins = [
    */
   Components({
     directoryAsNamespace: false,
-    dirs: ['src/components', 'src/layouts'],
-    extensions: ['vue'],
+    dirs: ["src/components", "src/layouts"],
+    extensions: ["vue"],
     dts: true,
     include: [/\.vue$/, /\.vue\?vue/],
   }),
-//TODO uncomment and setup GA
+  //TODO uncomment and setup GA
   // ViteRadar({
   //   enableDev: true,
   //   gtm: {
   //     id: 'GTM-P4BKNDB',
   //   },
   // }),
-//TODO turn on pwa in prod
+  //TODO turn on pwa in prod
   /**
    * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
    *
@@ -93,42 +93,41 @@ const plugins = [
   //     ],
   //   },
   // }),
-
 ]
 export default defineConfig({
   // Project root directory (where index.html is located).
   root: process.cwd(),
   // Base public path when served in development or production.
-  base: '/',
+  base: "/",
   // Directory to serve as plain static assets.
-  publicDir: 'public',
+  publicDir: "public",
   // Adjust console output verbosity.
-  logLevel: 'info',
+  logLevel: "info",
   // Will be passed to @rollup/plugin-alias as its entries option.
   resolve: {
     alias: [
       {
-        find: '/@src/',
+        find: "/@src/",
         replacement: `/src/`,
       },
     ],
   },
   optimizeDeps: {
-    exclude: ['@vueuse/core', '@vueuse/components'],
+    exclude: ["@vueuse/core", "@vueuse/components"],
     include: [
-      'h3',
-      'plyr',
-      'vue-scrollto',
-      'vue-marquee-text-component',
-      'cobe',
-      'vue3-carousel',
-      'vue3-popper',
-      'vue-my-photos',
-      'vue3-markdown-it',
-      'vue-accessible-color-picker',
-      'prismjs',
-      'vue-prism-component',
-      '@iconify/iconify',
+      "h3",
+      "plyr",
+      "vue-scrollto",
+      "vue-marquee-text-component",
+      "cobe",
+      "vue3-carousel",
+      "vue3-popper",
+      "vue-my-photos",
+      "vue3-markdown-it",
+      "vue-accessible-color-picker",
+      "prismjs",
+      "vue-prism-component",
+      "@iconify/iconify",
     ],
   },
   build: {

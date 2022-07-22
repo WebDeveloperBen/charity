@@ -1,3 +1,3 @@
 <template>
-  <headSection />
+  <routerView></routerView>
 </template>
