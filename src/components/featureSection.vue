@@ -28,12 +28,16 @@
       <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div class="relative">
           <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-            Transfer funds world-wide
+            Welcome, my name's Ashley
           </h3>
           <p class="mt-3 text-lg text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi
-            recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit
-            odit adipisci optio iste blanditiis facere. Totam, velit.
+            I'm not affiliated with
+            <span class="italic">Share The Dignity.</span> Yet it's a wonderful organisation that
+            I've donated too in previous years with my two young children. All information has come
+            form the Share The Dignity website found here:
+            <a class="text-blue-700" href="https://sharethedignity.org.au/itsinthebag"
+              >Share The Dignity Website</a
+            >
           </p>
 
           <dl class="mt-10 space-y-10">
@@ -75,12 +79,7 @@
             </defs>
             <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
           </svg>
-          <img
-            class="relative mx-auto"
-            width="490"
-            src="https://tailwindui.com/img/features/feature-example-1.png"
-            alt=""
-          />
+          <img class="relative mx-auto" width="400" src="/src/assets/Ashley_McBey.png" />
         </div>
       </div>
 
@@ -106,124 +105,34 @@
         </defs>
         <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
       </svg>
-
-      <div class="relative mt-12 sm:mt-16 lg:mt-24">
-        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div class="lg:col-start-2">
-            <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-              Always in the loop
-            </h3>
-            <p class="mt-3 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus
-              eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
-            </p>
-
-            <dl class="mt-10 space-y-10">
-              <div v-for="item in communicationFeatures" :key="item.id" class="relative">
-                <dt>
-                  <div
-                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
-                  >
-                    <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">{{ item.name }}</p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">
-                  {{ item.description }}
-                </dd>
-              </div>
-            </dl>
-          </div>
-
-          <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-            <svg
-              class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
-              width="784"
-              height="404"
-              fill="none"
-              viewBox="0 0 784 404"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-            </svg>
-            <img
-              class="relative mx-auto"
-              width="490"
-              src="https://tailwindui.com/img/features/feature-example-2.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  MailIcon,
-  ScaleIcon,
-} from "@heroicons/vue/outline"
+import { GlobeAltIcon, LightningBoltIcon, ScaleIcon } from "@heroicons/vue/outline"
 
 const transferFeatures = [
   {
     id: 1,
-    name: "Competitive exchange rates",
+    name: "Drop off at bunnings ",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "The bags are dropped off at Bunnings by generous Aussies, such as yourself, and are distributed to 3,000 Australian charities that have registered with Share the Dignity. ",
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: "No hidden fees",
+    name: "Collection 18th - 27th November",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "These charities then hand out your donated bags to people in need for Christmas. Our 2022 #ItsInTheBag collection points will be open from the 18th to the 27th of November at all Bunnings stores nationwide.",
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: "Transfers are instant",
+    name: "721,877 bags donated to date",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "In 2021, we were able to donate 100,174 #ItsInTheBag donations to women, girls and those who menstruate bringing our five-year total to 721,877 #ItsInTheBag donations.",
     icon: LightningBoltIcon,
-  },
-]
-const communicationFeatures = [
-  {
-    id: 1,
-    name: "Mobile notifications",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: AnnotationIcon,
-  },
-  {
-    id: 2,
-    name: "Reminder emails",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: MailIcon,
   },
 ]
 </script>

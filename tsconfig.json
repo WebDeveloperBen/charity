@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "allowJs": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -17,7 +18,8 @@
     "types": [
       "vite/client",
       // "vite-plugin-pwa/client",
-      "vite-plugin-pages/client"
+      "vite-plugin-pages/client",
+      "@cloudflare/workers-types"
     ],
     "paths": {
       "/@src/*": ["src/*"]
@@ -26,11 +28,8 @@
   "include": [
     "components.d.ts",
     "components-global.d.ts",
-    "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.tsx",
     "src/**/*.vue"
-  ],
-  "exclude": ["**/bulma-generated/**"]
+  ]
 }

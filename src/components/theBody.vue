@@ -1,6 +1,6 @@
 <template>
   <div class="relative mb-16 px-4">
-    <img class="mx-auto max-w-xs w-64 mb-6" src="src\assets\Ashley_McBey.png" />
+    <img class="mx-auto max-w-xs w-64 mb-6" src="/src/assets/Ashley_McBey.png" />
     <p
       class="text-center text-lg leading-8 font-normal tracking-tight text-gray-900 sm:text-lg max-w-xl mx-auto"
     >

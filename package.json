@@ -9,15 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.6.7",
     "@heroicons/vue": "^1.0.6",
     "@types/node": "^18.0.6",
     "@vue-hero-icons/outline": "^1.7.2",
     "@vue-hero-icons/solid": "^1.7.2",
     "ts-node": "^10.9.1",
     "vue": "^3.2.37",
-    "vue-router": "^4.1.2"
+    "vue-router": "^4.1.2",
+    "wrangler": "^2.0.22"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
     "@vitejs/plugin-vue": "^3.0.0",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",

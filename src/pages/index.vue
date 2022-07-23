@@ -1,7 +1,5 @@
 <template>
-  <HeadSection />
-  <CallToAction />
-  <TheBody />
+  <HeroSection />
   <featureSection />
   <myTable />
   <MyTeam />
