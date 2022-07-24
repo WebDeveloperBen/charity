@@ -8,10 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CallToAction: typeof import('./src/components/callToAction.vue')['default']
-    ChangePage: typeof import('./src/components/changePage.vue')['default']
-    Container: typeof import('./src/components/container.vue')['default']
     DashboardContainer: typeof import('./src/components/dashboardContainer.vue')['default']
-    Default: typeof import('./src/layouts/default.vue')['default']
     DefaultLayout: typeof import('./src/layouts/defaultLayout.vue')['default']
     FeatureSection: typeof import('./src/components/featureSection.vue')['default']
     HeadSection: typeof import('./src/components/headSection.vue')['default']
