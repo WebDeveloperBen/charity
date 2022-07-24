@@ -8,13 +8,18 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CallToAction: typeof import('./src/components/callToAction.vue')['default']
+    ChangePage: typeof import('./src/components/changePage.vue')['default']
+    Default: typeof import('./src/layouts/default.vue')['default']
+    DefaultLayout: typeof import('./src/layouts/defaultLayout.vue')['default']
     FeatureSection: typeof import('./src/components/featureSection.vue')['default']
     HeadSection: typeof import('./src/components/headSection.vue')['default']
     HeroSection: typeof import('./src/components/HeroSection.vue')['default']
     MyTable: typeof import('./src/components/myTable.vue')['default']
     MyTeam: typeof import('./src/components/myTeam.vue')['default']
+    Profile: typeof import('./src/components/profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SideBar: typeof import('./src/components/sideBar.vue')['default']
     SignInScreen: typeof import('./src/components/signInScreen.vue')['default']
     TheBody: typeof import('./src/components/theBody.vue')['default']
   }

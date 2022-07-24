@@ -4,12 +4,19 @@ import { useAuthStore } from "./stores/authStore"
 import index from "./pages/index.vue"
 import auth from "./pages/auth.vue"
 import dashboard from "./pages/dashboard.vue"
+import settings from "./pages/settings.vue"
 
 const routes = [
   {
     path: "/",
     name: "index",
     component: index,
+  },
+
+  {
+    path: "/settings",
+    name: "settings",
+    component: settings,
   },
   {
     path: "/auth",
@@ -43,9 +50,9 @@ export function createRouter() {
     const authStore = useAuthStore()
     if (to.meta.requiresAuth && !authStore.user.id) return { name: "auth" }
 
-    if (authStore.user.id && to.name === "auth") {
-      return false
-    }
+    // if (authStore.user.id && to.name === "auth") {
+    //   return false
+    // }
   })
 
   return router

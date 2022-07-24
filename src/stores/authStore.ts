@@ -1,9 +1,13 @@
-import { signOut, signInWithEmailAndPassword, onAuthStateChanged } from "@firebase/auth"
+import {
+  signOut,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  updatePassword,
+  updateEmail,
+} from "@firebase/auth"
 import { defineStore } from "pinia"
 import { auth } from "../firebase"
-import { useRouter } from "vue-router"
 
-const router = useRouter()
 //
 // HANDLES APP AUTHENTICATION ONLY -> ENSURE TO FETCH ANY FIREBASE /
 // FIRESTORE DATA IN ONAUTHSTATE CHANGED FUNCTION UNDER INIT
@@ -31,6 +35,7 @@ export const useAuthStore = defineStore("authStore", {
   },
   actions: {
     init() {
+      // const router = useRouter()
       onAuthStateChanged(auth, (user) => {
         if (user) {
           this.user.id = user.uid
@@ -38,6 +43,7 @@ export const useAuthStore = defineStore("authStore", {
           this.user.name = user.displayName
         } else {
           this.user = <any>{}
+          // router.replace("/auth")
         }
       })
     },
@@ -47,7 +53,12 @@ export const useAuthStore = defineStore("authStore", {
     },
     async LogOut() {
       await signOut(auth)
-      router.replace("/auth")
+    },
+    async changePassword(newPassword: string) {
+      if (auth.currentUser) await updatePassword(auth.currentUser, newPassword)
+    },
+    async changeAccountEmail(newEmail: string) {
+      if (auth.currentUser) await updateEmail(auth.currentUser, newEmail)
     },
   },
 })
