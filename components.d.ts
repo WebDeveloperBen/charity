@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CallToAction: typeof import('./src/components/callToAction.vue')['default']
     DashboardContainer: typeof import('./src/components/dashboardContainer.vue')['default']
+    DataTable: typeof import('./src/components/dataTable.vue')['default']
     DefaultLayout: typeof import('./src/layouts/defaultLayout.vue')['default']
     FeatureSection: typeof import('./src/components/featureSection.vue')['default']
     HeadSection: typeof import('./src/components/headSection.vue')['default']
